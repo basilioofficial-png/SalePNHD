@@ -204,6 +204,7 @@ body.menu-open .mobile-menu{display:flex}
 .place-media__map img{width:100%;height:100%;object-fit:cover;transition:opacity .12s ease}
 .place-media__map:hover img{opacity:.85}
 .place-media__entrance{position:relative;aspect-ratio:16/9}
+.place-media__entrance img{width:100%;height:100%;object-fit:cover}
 
 /* ---------- form ---------- */
 .form-section{background:var(--ph-black);color:var(--ph-white)}
@@ -211,6 +212,7 @@ body.menu-open .mobile-menu{display:flex}
 .form-intro{display:flex;flex-direction:column;gap:18px}
 .form-intro p{font-size:clamp(16px,2vw,19px);line-height:1.4;max-width:44ch;color:var(--ph-grey-10);text-wrap:pretty}
 .form-intro .ph-slot{aspect-ratio:4/3;border-top:1px solid var(--ph-grey-80)}
+.production-photo{aspect-ratio:4/3;width:100%;height:auto;object-fit:cover;border-top:1px solid var(--ph-grey-80)}
 .form-card{border:1px solid var(--ph-white);padding:clamp(18px,3vw,32px)}
 .field{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
 .field label{font-size:13px;text-transform:uppercase;letter-spacing:0.06em;font-weight:700}
