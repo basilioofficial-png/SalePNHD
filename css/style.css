@@ -242,10 +242,22 @@ body.menu-open .mobile-menu{display:flex}
 
 /* ---------- final cta ---------- */
 .final-cta{position:relative;overflow:hidden}
-.final-cta .section__inner{gap:26px;position:relative;z-index:1}
+.final-cta .section__inner{position:relative;z-index:1}
+.final-cta__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(28px,4vw,64px);align-items:center}
+.final-cta__copy{display:flex;flex-direction:column;gap:26px}
 .final-cta h2{max-width:18ch}
 .final-cta p{font-size:clamp(17px,2.2vw,22px);line-height:1.35;max-width:44ch}
 .final-cta__mark{position:absolute;right:-40px;bottom:-60px;width:clamp(180px,26vw,340px);opacity:0.18;pointer-events:none}
+
+.merch-links{display:flex;flex-direction:column;gap:14px}
+.merch-link{
+  display:flex;align-items:center;gap:16px;border:1px solid var(--ph-black);background:transparent;
+  color:var(--ph-black);padding:18px 22px;min-height:44px;font-weight:700;text-transform:uppercase;
+  font-size:15px;letter-spacing:0.01em;line-height:1.25;
+}
+.merch-link:hover{background:var(--ph-black);color:var(--ph-lime)}
+.merch-link__logo{height:20px;width:auto;flex:0 0 auto}
+.merch-link:hover .merch-link__logo{filter:invert(1)}
 
 /* ---------- footer ---------- */
 .site-footer{background:var(--ph-black);color:var(--ph-white);padding:clamp(40px,5vw,72px) var(--pad-x) clamp(80px,8vw,56px)}
