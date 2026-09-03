@@ -125,7 +125,15 @@ body.menu-open .mobile-menu{display:flex}
 .hero__photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero__dates{
   position:absolute;left:0;bottom:0;pointer-events:none;font-family:var(--font-display);font-weight:900;
-  font-size:clamp(90px,14vw,200px);line-height:0.8;color:var(--ph-lime);mix-blend-mode:difference;padding:0 0 8px 12px;
+  font-size:clamp(90px,14vw,200px);line-height:0.8;color:var(--ph-lime);padding:0 0 8px 12px;
+  display:flex;align-items:flex-end;gap:10px;
+  -webkit-text-stroke:2px var(--ph-black);
+  text-shadow:0 0 14px rgba(0,0,0,0.65);
+}
+.hero__dates-month{
+  font-family:var(--font-text);font-weight:700;text-transform:uppercase;letter-spacing:0.04em;
+  font-size:clamp(13px,1.8vw,20px);line-height:1;color:var(--ph-white);padding-bottom:0.45em;
+  -webkit-text-stroke:0;text-shadow:0 0 8px rgba(0,0,0,0.8);
 }
 
 /* ---------- image placeholder slot ---------- */
