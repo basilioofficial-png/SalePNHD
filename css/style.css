@@ -163,6 +163,7 @@ body.menu-open .mobile-menu{display:flex}
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--ph-black);border:1px solid var(--ph-black)}
 .card{background:var(--ph-white);display:flex;flex-direction:column}
 .card__media{position:relative;aspect-ratio:4/5}
+.card__media img{width:100%;height:100%;object-fit:cover}
 .card__body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
 .card__body h3{font-size:clamp(26px,3vw,36px);text-transform:uppercase}
 .card__body p{font-size:16px;line-height:1.35;color:var(--ph-grey-70)}
