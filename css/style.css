@@ -204,11 +204,11 @@ body.menu-open .mobile-menu{display:flex}
 
 /* ---------- form ---------- */
 .form-section{background:var(--ph-black);color:var(--ph-white)}
-.form-section .section__inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(28px,4vw,64px);align-items:start}
+.form-section .section__inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(28px,4vw,64px);align-items:stretch}
 .form-intro{display:flex;flex-direction:column;gap:18px}
 .form-intro p{font-size:clamp(16px,2vw,19px);line-height:1.4;max-width:44ch;color:var(--ph-grey-10);text-wrap:pretty}
 .form-intro .ph-slot{aspect-ratio:4/3;border-top:1px solid var(--ph-grey-80)}
-.production-photo{aspect-ratio:4/3;width:100%;height:auto;object-fit:cover;border-top:1px solid var(--ph-grey-80)}
+.production-photo{width:100%;flex:1;min-height:260px;object-fit:cover;border-top:1px solid var(--ph-grey-80)}
 .form-card{border:1px solid var(--ph-white);padding:clamp(18px,3vw,32px)}
 .field{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
 .field label{font-size:13px;text-transform:uppercase;letter-spacing:0.06em;font-weight:700}
