@@ -193,6 +193,7 @@ body.menu-open .mobile-menu{display:flex}
 .card__price strong{font-family:var(--font-display);font-size:clamp(30px,4vw,42px);font-weight:900;line-height:1}
 .card__badge{background:var(--ph-lime);color:var(--ph-black);font-size:13px;font-weight:700;padding:4px 9px;text-transform:uppercase;letter-spacing:0.02em}
 .card__meta{font-size:13px;line-height:1.4;text-transform:uppercase;letter-spacing:0.04em;color:var(--ph-grey-50);border-top:1px solid var(--ph-grey-10);padding-top:12px}
+.assortment-note{margin:0;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:var(--ph-black)}
 
 /* ---------- discounts ---------- */
 .discount-panel{display:flex;flex-direction:column;border:1px solid var(--ph-black);background:var(--ph-lime)}
