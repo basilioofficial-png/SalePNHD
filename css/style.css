@@ -130,8 +130,8 @@ body.menu-open .mobile-menu{display:flex}
 .hero__grid{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
 .hero__copy{padding:clamp(28px,5vw,64px) var(--pad-x) clamp(32px,4vw,56px);display:flex;flex-direction:column;justify-content:center;gap:clamp(20px,3vw,32px)}
 .hero__pretitle{
-  margin:0 0 -14px;font-family:var(--font-display);font-weight:900;text-transform:uppercase;
-  font-size:clamp(20px,3.4vw,38px);line-height:1;color:var(--ph-white);letter-spacing:-0.01em;
+  margin:0;font-family:var(--font-display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(44px,8.5vw,104px);line-height:0.88;color:var(--ph-white);letter-spacing:-0.01em;
 }
 .hero__caption{margin:0;font-size:15px;color:var(--ph-grey-40);letter-spacing:0.02em}
 .hero__caption strong{color:var(--ph-lime);font-weight:400}
