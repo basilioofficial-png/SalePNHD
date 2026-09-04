@@ -62,6 +62,22 @@
 </div>
 
 <header class="site-header">
+  <div class="marquee js-hide-after-sale" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">19–20 СЕНТЯБРЯ</span>
+      <span class="marquee__item">ЧАПЫГИНА, 1</span>
+      <span class="marquee__item">ВХОД СВОБОДНЫЙ</span>
+      <span class="marquee__item">DJ-СЕТ</span>
+      <span class="marquee__item">ТОЛЬКО ДВА ДНЯ</span>
+      <span class="marquee__item">FACTORY SALE</span>
+      <span class="marquee__item">19–20 СЕНТЯБРЯ</span>
+      <span class="marquee__item">ЧАПЫГИНА, 1</span>
+      <span class="marquee__item">ВХОД СВОБОДНЫЙ</span>
+      <span class="marquee__item">DJ-СЕТ</span>
+      <span class="marquee__item">ТОЛЬКО ДВА ДНЯ</span>
+      <span class="marquee__item">FACTORY SALE</span>
+    </div>
+  </div>
   <div class="site-header__bar">
     <a href="#top" class="brand" aria-label="Studio PNHD — на главную">
       <img src="assets/logo-pinhead-studio.svg" alt="Studio PNHD">
@@ -71,7 +87,7 @@
       <a href="#discounts" class="js-hide-after-sale">Скидки</a>
       <a href="#custom">Кастомизация</a>
       <a href="#place">Как добраться</a>
-      <a href="#form" class="btn btn--lime">Заказать тираж</a>
+      <a href="#assortment" class="btn btn--lime" data-analytics="sale_prices_click">Смотреть цены</a>
     </nav>
     <button type="button" class="menu-toggle" id="menuToggle" aria-label="Меню" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
@@ -82,7 +98,7 @@
     <a href="#discounts" class="js-hide-after-sale">Скидки</a>
     <a href="#custom">Кастомизация</a>
     <a href="#place">Как добраться</a>
-    <a href="#form" class="btn btn--lime">Заказать тираж</a>
+    <a href="#assortment" class="btn btn--lime" data-analytics="sale_prices_click">Смотреть цены</a>
   </nav>
 </header>
 
@@ -92,44 +108,32 @@
   <section class="hero">
     <div class="hero__grid">
       <div class="hero__copy">
-        <h1 class="h1">Большая распродажа трикотажа PNHD</h1>
-        <p class="lede">Футболки, худи, лонгсливы и свитшоты собственного производства по специальным ценам. Забирайте чистую базу или заказывайте кастомизацию.</p>
+        <h1 class="h1">FACTORY <span class="h1__sale">SALE</span> PNHD</h1>
+        <p class="lede">Трикотаж собственного производства по ценам, которых после распродажи не будет.</p>
+        <p class="hero__prices">Футболки от 800 ₽ · Худи от 2 000 ₽</p>
         <div class="btn-row">
-          <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--lime btn--lg js-route-link" data-analytics="sale_route_click">Построить маршрут</a>
-          <a href="#form" class="btn btn--outline-white btn--lg js-cta-main">Хочу заказать тираж</a>
+          <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--lime btn--lg js-route-link" data-analytics="sale_route_click">Проложить маршрут</a>
+          <a href="#assortment" class="btn btn--outline-white btn--lg" data-analytics="sale_prices_click">Смотреть цены ↓</a>
         </div>
         <p class="hero__caption">Санкт-Петербург, Studio PNHD, ул. Чапыгина, 1</p>
       </div>
       <div class="hero__visual">
         <img src="images/hero.webp" alt="Большая распродажа трикотажа PNHD 19–20 сентября, 11:00–20:00, ул. Чапыгина, 1" class="hero__photo" fetchpriority="high">
+        <span class="price-sticker price-sticker--tl">от 800 ₽</span>
+        <span class="price-sticker price-sticker--tr">до −50%</span>
       </div>
     </div>
   </section>
 
-  <!-- Блок 2. Ключевые преимущества -->
-  <section class="advantages" aria-label="Ключевые преимущества">
-    <div class="advantages__grid">
-      <div class="advantage">
-        <span class="advantage__num">01</span>
-        <h3>Собственное производство</h3>
-        <p>Трикотаж с фабрики PNHD.</p>
-      </div>
-      <div class="advantage">
-        <span class="advantage__num">02</span>
-        <h3>Только два дня</h3>
-        <p>19 и 20 сентября, с 11:00 до 20:00.</p>
-      </div>
-      <div class="advantage">
-        <span class="advantage__num">03</span>
-        <h3>Выгоднее за количество</h3>
-        <p>Чем больше изделий, тем ниже цена за штуку.</p>
-      </div>
-      <div class="advantage">
-        <span class="advantage__num">04</span>
-        <h3>Можно кастомизировать</h3>
-        <p>DTG, DTF, шелкография и вышивка.</p>
-      </div>
-    </div>
+  <!-- Блок 2. Стат-полоса -->
+  <section class="stat-strip" aria-label="Ключевые факты о распродаже">
+    <p class="stat-strip__row">
+      <span>2 дня</span><span class="stat-strip__sep">/</span>
+      <span>от 800 ₽</span><span class="stat-strip__sep">/</span>
+      <span>XS–2XL</span><span class="stat-strip__sep">/</span>
+      <span>Вход свободный</span>
+    </p>
+    <p class="stat-strip__note">Размеры, цвета и количество ограничены — цена такая из-за складских остатков</p>
   </section>
 
   <!-- Блок 3. Ассортимент -->
@@ -145,7 +149,8 @@
           <div class="card__body">
             <h3>Футболки</h3>
             <p>Базовые модели под самостоятельную носку и нанесение.</p>
-            <p class="card__meta">Цена от 800 ₽ · размеры от XS до 2XL</p>
+            <p class="card__price"><s>1 600 ₽</s> <strong>800 ₽</strong> <span class="card__badge">−50%</span></p>
+            <p class="card__meta">Размеры от XS до 2XL · количество ограничено</p>
           </div>
         </article>
         <article class="card">
@@ -153,7 +158,8 @@
           <div class="card__body">
             <h3>Худи</h3>
             <p>Плотная база для повседневной одежды и мерча.</p>
-            <p class="card__meta">Цена от 2 000 ₽ · размеры от XS до 2XL</p>
+            <p class="card__price"><s>4 000 ₽</s> <strong>2 000 ₽</strong> <span class="card__badge">−50%</span></p>
+            <p class="card__meta">Размеры от XS до 2XL · количество ограничено</p>
           </div>
         </article>
         <article class="card">
@@ -161,7 +167,8 @@
           <div class="card__body">
             <h3>Лонгсливы</h3>
             <p>Универсальный слой на прохладный сезон.</p>
-            <p class="card__meta">Цена от 1 500 ₽ · размеры от XS до 2XL</p>
+            <p class="card__price"><s>3 000 ₽</s> <strong>1 500 ₽</strong> <span class="card__badge">−50%</span></p>
+            <p class="card__meta">Размеры от XS до 2XL · количество ограничено</p>
           </div>
         </article>
         <article class="card">
@@ -169,12 +176,13 @@
           <div class="card__body">
             <h3>Свитшоты</h3>
             <p>Чистая форма, удобная посадка и возможность кастомизации.</p>
-            <p class="card__meta">Цена от 1 800 ₽ · размеры от XS до 2XL</p>
+            <p class="card__price"><s>3 600 ₽</s> <strong>1 800 ₽</strong> <span class="card__badge">−50%</span></p>
+            <p class="card__meta">Размеры от XS до 2XL · количество ограничено</p>
           </div>
         </article>
       </div>
       <div class="btn-row">
-        <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--black js-route-link" data-analytics="sale_route_click">Построить маршрут</a>
+        <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--black js-route-link" data-analytics="sale_route_click">Проложить маршрут</a>
         <a href="#form" class="btn btn--outline-black js-cta-main">Хочу заказать тираж</a>
       </div>
     </div>
@@ -202,8 +210,8 @@
   <section id="custom" class="section section--white">
     <div class="section__inner">
       <div class="section__head">
-        <h2 class="h2">Забирайте чистой или делайте своей</h2>
-        <p>Выберите готовую базу и добавьте свой принт, логотип, иллюстрацию или надпись. Поможем подобрать технологию под дизайн, материал и количество изделий.</p>
+        <h2 class="h2">Купи базу. Сделай её своей.</h2>
+        <p>Добавь принт, надпись или логотип по специальной цене для участников распродажи. Поможем подобрать технологию под дизайн, материал и количество изделий.</p>
       </div>
       <div class="tech-grid">
         <article class="tech-card">
@@ -235,25 +243,20 @@
           </div>
         </article>
       </div>
-      <a href="#form" class="btn btn--black" style="align-self:flex-start" data-analytics="sale_customization_click">Обсудить кастомизацию</a>
+      <a href="#form" class="btn btn--black" style="align-self:flex-start" data-analytics="sale_customization_click">Обсудить кастом</a>
     </div>
   </section>
 
-  <!-- Блок 6. Для брендов и компаний -->
-  <section id="b2b" class="section section--blue">
-    <div class="section__inner" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
-      <div style="display:flex;flex-direction:column;gap:20px">
-        <span class="b2b__tag">Для брендов и компаний</span>
-        <h2 class="h2--md" style="font-family:var(--font-display);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em">Нужна партия для бренда, команды или компании?</h2>
-        <p style="font-size:clamp(16px,2vw,19px);line-height:1.4;max-width:48ch">На распродаже можно посмотреть и потрогать изделия PNHD, выбрать подходящую модель и обсудить тираж с нанесением. Подберём технологию, рассчитаем стоимость и поможем подготовить макет к производству.</p>
-        <a href="#form" class="btn btn--lime btn--lg" style="align-self:flex-start" data-analytics="sale_customization_click">Получить расчёт тиража</a>
-      </div>
-      <ul class="b2b__list">
-        <li>Собственное производство трикотажа</li>
-        <li>Несколько технологий нанесения</li>
-        <li>Помощь с предпечатной подготовкой</li>
-        <li>Скидки на количество</li>
-        <li>Возможность подобрать решение под задачу и бюджет</li>
+  <!-- Блок 6. Атмосфера события -->
+  <section id="atmosphere" class="section section--black">
+    <div class="section__inner">
+      <h2 class="h2">Это не просто склад с вешалками</h2>
+      <ul class="atmosphere-list">
+        <li>DJ-сет</li>
+        <li>Вход свободный</li>
+        <li>Примерочная и помощь с размером</li>
+        <li>Можно потрогать материалы и сравнить плотность</li>
+        <li>Кастомизация вещей на месте</li>
       </ul>
     </div>
   </section>
@@ -268,14 +271,14 @@
             <p class="place-card__date js-hide-after-sale">19–20 сентября 2026</p>
             <p class="place-card__time js-hide-after-sale">С 11:00 до 20:00</p>
             <p class="place-card__addr">Санкт-Петербург, ул. Чапыгина, 1<br>Studio PNHD</p>
-            <p class="place-note">Плейсхолдер: подпись «Вход свободный» — включить после подтверждения</p>
+            <p class="place-card__free js-hide-after-sale">Вход свободный</p>
           </div>
           <div class="btn-row">
-            <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--black js-route-link" data-analytics="sale_route_click">Построить маршрут</a>
+            <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--black js-route-link" data-analytics="sale_route_click">Проложить маршрут</a>
             <button type="button" class="btn btn--outline-black js-add-calendar js-hide-after-sale" data-date="2026-09-19" data-analytics="sale_calendar_click">Добавить 19 сентября</button>
             <button type="button" class="btn btn--outline-black js-add-calendar js-hide-after-sale" data-date="2026-09-20" data-analytics="sale_calendar_click">Добавить 20 сентября</button>
           </div>
-          <p class="place-note">.ics-файлы формируются автоматически кнопками выше</p>
+          <p class="place-note js-hide-after-sale">Просто приезжайте — записываться не нужно. Форма ниже — только для тиража и кастомизации.</p>
         </div>
         <div class="place-media">
           <a class="place-media__map" href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" aria-label="Открыть Studio PNHD в Яндекс Картах" data-analytics="sale_route_click">
@@ -284,6 +287,23 @@
           <div class="place-media__entrance"><img src="images/entrance.webp" alt="Вход в Studio PNHD, ул. Чапыгина, 1" loading="lazy"></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Блок 7.1. Для брендов и компаний (сокращённый, после адреса) -->
+  <section id="b2b" class="section section--blue">
+    <div class="section__inner" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <span class="b2b__tag">Для брендов и компаний</span>
+        <h2 class="h2--md" style="font-family:var(--font-display);font-weight:900;text-transform:uppercase;letter-spacing:-0.01em">Нужно больше 10 вещей?</h2>
+        <p style="font-size:clamp(16px,2vw,19px);line-height:1.4;max-width:48ch">Подберём модели, нанесение и отдельно рассчитаем тираж для бренда, команды или компании.</p>
+        <a href="#form" class="btn btn--lime btn--lg" style="align-self:flex-start" data-analytics="sale_customization_click">Рассчитать тираж</a>
+      </div>
+      <ul class="b2b__list">
+        <li>Собственное производство трикотажа</li>
+        <li>Несколько технологий нанесения</li>
+        <li>Помощь с подготовкой макета</li>
+      </ul>
     </div>
   </section>
 
@@ -412,7 +432,7 @@
         <p class="js-hide-after-sale">Приходите 19 или 20 сентября с 11:00 до 20:00. Санкт-Петербург, Чапыгина, 1.</p>
         <p style="display:none" data-sale-ended-lede>Санкт-Петербург, Studio PNHD, ул. Чапыгина, 1. Оставьте заявку — поможем с трикотажем и нанесением.</p>
         <div class="btn-row">
-          <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--black btn--lg js-route-link" data-analytics="sale_route_click">Построить маршрут</a>
+          <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--black btn--lg js-route-link" data-analytics="sale_route_click">Проложить маршрут</a>
           <a href="#form" class="btn btn--outline-black btn--lg js-cta-main">Заказать тираж</a>
         </div>
       </div>
@@ -459,7 +479,7 @@
 </main>
 
 <div class="mobile-cta js-hide-after-sale">
-  <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--lime js-route-link" data-analytics="sale_route_click">Построить маршрут</a>
+  <a href="https://yandex.ru/maps/-/CTXy4ZPX" target="_blank" rel="noopener" class="btn btn--lime js-route-link" data-analytics="sale_route_click">Как добраться</a>
 </div>
 
 <script src="js/main.js"></script>
