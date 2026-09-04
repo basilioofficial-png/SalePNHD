@@ -132,13 +132,13 @@ body.menu-open .mobile-menu{display:flex}
 .hero__caption{margin:0;font-size:15px;color:var(--ph-grey-40);letter-spacing:0.02em}
 .hero__caption strong{color:var(--ph-lime);font-weight:400}
 .h1__sale{color:var(--ph-lime)}
-.hero__prices{margin:0;font-size:clamp(14px,2vw,17px);font-weight:700;text-transform:uppercase;letter-spacing:0.03em;color:var(--ph-white)}
+.hero__prices{margin:0;font-family:var(--font-display);font-size:clamp(22px,3.4vw,34px);font-weight:900;text-transform:uppercase;letter-spacing:0;color:var(--ph-lime);line-height:1.1}
 .hero__visual{position:relative;min-height:clamp(320px,52vw,620px);border-left:1px solid var(--ph-grey-80);background:var(--ph-black);display:flex;align-items:center;justify-content:center}
 .hero__photo{width:100%;height:100%;object-fit:contain}
 .price-sticker{
   position:absolute;background:var(--ph-lime);color:var(--ph-black);border:1px solid var(--ph-black);
-  padding:8px 14px;font-family:var(--font-display);font-weight:900;text-transform:uppercase;
-  font-size:clamp(14px,2vw,20px);letter-spacing:0;box-shadow:0 0 0 4px var(--ph-black);z-index:2;
+  padding:10px 16px;font-family:var(--font-display);font-weight:900;text-transform:uppercase;
+  font-size:clamp(18px,2.6vw,28px);letter-spacing:0;box-shadow:0 0 0 4px var(--ph-black);z-index:2;
 }
 .price-sticker--tl{top:16px;left:16px;transform:rotate(-6deg)}
 .price-sticker--tr{top:16px;right:16px;transform:rotate(5deg)}
@@ -184,10 +184,10 @@ body.menu-open .mobile-menu{display:flex}
 .card__body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
 .card__body h3{font-size:clamp(26px,3vw,36px);text-transform:uppercase}
 .card__body p{font-size:16px;line-height:1.35;color:var(--ph-grey-70)}
-.card__price{margin-top:auto;font-size:20px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
-.card__price s{font-size:15px;color:var(--ph-grey-40);font-weight:400}
-.card__price strong{font-family:var(--font-display);font-size:24px;font-weight:900}
-.card__badge{background:var(--ph-lime);color:var(--ph-black);font-size:12px;font-weight:700;padding:2px 8px;text-transform:uppercase;letter-spacing:0.02em}
+.card__price{margin-top:auto;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.card__price s{font-size:16px;color:var(--ph-grey-40);font-weight:400}
+.card__price strong{font-family:var(--font-display);font-size:clamp(30px,4vw,42px);font-weight:900;line-height:1}
+.card__badge{background:var(--ph-lime);color:var(--ph-black);font-size:13px;font-weight:700;padding:4px 9px;text-transform:uppercase;letter-spacing:0.02em}
 .card__meta{font-size:13px;line-height:1.4;text-transform:uppercase;letter-spacing:0.04em;color:var(--ph-grey-50);border-top:1px solid var(--ph-grey-10);padding-top:12px}
 
 /* ---------- discounts ---------- */
