@@ -211,6 +211,8 @@ body.menu-open .mobile-menu{display:flex}
 .tech-card__body{padding:20px;display:flex;flex-direction:column;gap:8px}
 .tech-card__body h3{font-size:24px;text-transform:uppercase;font-weight:700;letter-spacing:0.02em;font-family:var(--font-text)}
 .tech-card__body p{font-size:16px;line-height:1.35;color:var(--ph-grey-70)}
+.tech-card__mark{color:var(--ph-blue);font-weight:400}
+.tech-card__note{margin-top:auto;font-size:12px;text-transform:uppercase;letter-spacing:0.03em;color:var(--ph-grey-50)}
 
 /* ---------- b2b ---------- */
 .b2b__tag{font-size:13px;text-transform:uppercase;letter-spacing:0.08em;font-weight:700;color:var(--ph-lime)}
