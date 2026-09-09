@@ -256,6 +256,8 @@ body.menu-open .mobile-menu{display:flex}
 .field-error{font-size:14px;color:var(--ph-lime)}
 .field--consent label{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.35;cursor:pointer;font-weight:400;text-transform:none;letter-spacing:0}
 .field--consent input{width:22px;height:22px;flex:0 0 auto;accent-color:var(--ph-lime);margin:0}
+.field--consent a{color:var(--ph-lime)}
+.field--consent a:hover{color:var(--ph-white)}
 .form-hint{margin:10px 0 0;font-size:13px;color:var(--ph-grey-50);line-height:1.4}
 .form-success{display:none;flex-direction:column;gap:16px;align-items:flex-start}
 .form-success__title{font-family:var(--font-display);font-size:clamp(28px,4vw,44px);line-height:1;text-transform:uppercase;color:var(--ph-lime)}
