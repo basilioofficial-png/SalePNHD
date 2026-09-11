@@ -52,10 +52,25 @@
 }
 </script>
 
-<!-- TODO: Яндекс.Метрика — вставить счётчик перед публикацией -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112490295', 'ym');
+
+    ym(112490295, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+
+    window.YM_COUNTER_ID = 112490295;
+</script>
+<!-- /Yandex.Metrika counter -->
+
 <!-- TODO: Google Analytics 4 (gtag.js) — вставить счётчик перед публикацией, если нужен -->
 </head>
 <body>
+<noscript><div><img src="https://mc.yandex.ru/watch/112490295" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 <div class="sale-ended-banner" role="status">
   Распродажа завершилась. Оставьте заявку, если хотите заказать трикотаж или кастомизацию в Studio&nbsp;PNHD.
