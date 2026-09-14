@@ -392,8 +392,9 @@
           <input type="hidden" name="utm_campaign" id="f-utm-campaign" value="">
           <input type="hidden" name="utm_content" id="f-utm-content" value="">
           <input type="hidden" name="utm_term" id="f-utm-term" value="">
-          <button type="submit" class="btn btn--lime" style="width:100%">Получить консультацию</button>
-          <p class="form-hint">Плейсхолдер: приём заявок в CRM, передача UTM-меток и источника. Сейчас форма работает локально в браузере — эндпоинт для отправки нужно подключить (см. README, раздел «Форма заявки»).</p>
+          <button type="submit" class="btn btn--lime" id="formSubmit" style="width:100%">Получить консультацию</button>
+          <p class="field-error" id="err-submit" role="alert" hidden></p>
+          <p class="form-hint">Заявка уходит напрямую в CRM вместе с UTM-метками и источником перехода.</p>
         </form>
       </div>
     </div>

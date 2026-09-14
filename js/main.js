@@ -98,17 +98,15 @@
   });
 
   /* ------------------------------------------------------------------
-   * Форма заявки: валидация + локальное состояние успеха.
-   *
-   * ВАЖНО: сейчас форма не отправляется никуда — это ТОЛЬКО фронтенд.
-   * Чтобы реально получать заявки, подключите приём данных (см. README,
-   * раздел «Форма заявки»): например, Vercel Serverless Function,
-   * который отправляет данные в вашу CRM/почту/Telegram, или сторонний
-   * сервис форм (Getform, Formspree и т.п.).
+   * Форма заявки: валидация + отправка в CRM (Bitrix24) через
+   * серверную функцию /api/lead (см. api/lead.js). Секретный вебхук
+   * Bitrix хранится в переменной окружения на Vercel и никогда не
+   * попадает в браузер.
    * ------------------------------------------------------------------ */
   var form = document.getElementById("saleForm");
   var formCard = document.getElementById("formCard");
   var formReset = document.getElementById("formReset");
+  var formSubmit = document.getElementById("formSubmit");
   var startedTracking = false;
 
   function setError(fieldId, message) {
@@ -144,17 +142,45 @@
 
       if (hasError) return;
 
-      /* TODO: здесь должен быть реальный запрос на бэкенд/CRM, например:
-       * fetch("/api/lead", { method: "POST", body: new FormData(form) })
-       */
+      setError("submit", null);
+      formSubmit.disabled = true;
+      formSubmit.textContent = "Отправляем…";
 
-      track("sale_form_submit", {
+      var payload = {
+        name: name,
+        contact: contact,
+        consent: consent,
         need: form.need.value,
-        qty: form.qty.value
-      });
+        qty: form.qty.value,
+        comment: form.comment.value,
+        source: form.source.value,
+        utm_source: form.utm_source.value,
+        utm_medium: form.utm_medium.value,
+        utm_campaign: form.utm_campaign.value,
+        utm_content: form.utm_content.value,
+        utm_term: form.utm_term.value
+      };
 
-      formCard.classList.add("is-sent");
-      form.classList.add("is-sent");
+      fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+        .then(function (result) {
+          if (!result.ok || !result.data.ok) throw new Error(result.data && result.data.error);
+
+          track("sale_form_submit", { need: form.need.value, qty: form.qty.value });
+          formCard.classList.add("is-sent");
+          form.classList.add("is-sent");
+        })
+        .catch(function () {
+          setError("submit", "Не получилось отправить заявку. Попробуйте ещё раз или напишите нам в Telegram.");
+        })
+        .finally(function () {
+          formSubmit.disabled = false;
+          formSubmit.textContent = "Получить консультацию";
+        });
     });
   }
 
@@ -167,6 +193,7 @@
       setError("name", null);
       setError("contact", null);
       setError("consent", null);
+      setError("submit", null);
     });
   }
 
