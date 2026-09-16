@@ -183,7 +183,7 @@ body.menu-open .mobile-menu{display:flex}
 /* ---------- assortment ---------- */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:1px;background:var(--ph-black);border:1px solid var(--ph-black)}
 .card{background:var(--ph-white);display:flex;flex-direction:column}
-.card__media{position:relative;aspect-ratio:4/5}
+.card__media{position:relative;aspect-ratio:4/5;overflow:hidden}
 .card__media img{width:100%;height:100%;object-fit:cover}
 .card__body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
 .card__body h3{font-size:clamp(26px,3vw,36px);text-transform:uppercase}
@@ -221,7 +221,7 @@ body.menu-open .mobile-menu{display:flex}
 /* ---------- customization tech cards ---------- */
 .tech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:1px;background:var(--ph-black);border:1px solid var(--ph-black)}
 .tech-card{background:var(--ph-white);display:flex;flex-direction:column}
-.tech-card__media{position:relative;aspect-ratio:3/2}
+.tech-card__media{position:relative;aspect-ratio:3/2;overflow:hidden}
 .tech-card__media img{width:100%;height:100%;object-fit:cover}
 .tech-card__body{padding:20px;display:flex;flex-direction:column;gap:8px}
 .tech-card__body h3{font-size:24px;text-transform:uppercase;font-weight:700;letter-spacing:0.02em;font-family:var(--font-text)}
@@ -250,7 +250,7 @@ body.menu-open .mobile-menu{display:flex}
 .place-media__map{position:relative;aspect-ratio:4/3;display:block;overflow:hidden}
 .place-media__map img{width:100%;height:100%;object-fit:cover;transition:opacity .12s ease}
 .place-media__map:hover img{opacity:.85}
-.place-media__entrance{position:relative;aspect-ratio:16/9}
+.place-media__entrance{position:relative;aspect-ratio:16/9;overflow:hidden}
 .place-media__entrance img{width:100%;height:100%;object-fit:cover}
 
 /* ---------- form ---------- */
