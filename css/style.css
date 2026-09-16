@@ -202,7 +202,11 @@ body.menu-open .mobile-menu{display:flex}
 .color-list__group{padding:10px 0;border-top:1px solid var(--ph-grey-10)}
 .color-list__group:first-of-type{border-top:none}
 .color-list__label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--ph-blue);margin:0 0 4px}
-.color-list__items{font-size:13px;line-height:1.5;color:var(--ph-grey-70);margin:0}
+.color-list__items{display:flex;flex-wrap:wrap;gap:12px 10px}
+.swatch{display:flex;flex-direction:column;align-items:center;width:58px;text-align:center}
+.swatch__box{width:26px;height:26px;background:var(--c);border:1px solid var(--ph-black)}
+.swatch--light .swatch__box{box-shadow:inset 0 0 0 1px var(--ph-grey-10)}
+.swatch__name{margin-top:5px;font-size:9.5px;line-height:1.25;color:var(--ph-grey-70)}
 .assortment-note{margin:0;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:var(--ph-black)}
 
 /* ---------- discounts ---------- */
