@@ -188,6 +188,7 @@ body.menu-open .mobile-menu{display:flex}
 .card__body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
 .card__body h3{font-size:clamp(26px,3vw,36px);text-transform:uppercase}
 .card__body p{font-size:16px;line-height:1.35;color:var(--ph-grey-70)}
+.card__body>p:first-of-type{min-height:2.7em}
 .card__price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .card__price s{font-size:16px;color:var(--ph-grey-40);font-weight:400}
 .card__price strong{font-family:var(--font-display);font-size:clamp(30px,4vw,42px);font-weight:900;line-height:1}
